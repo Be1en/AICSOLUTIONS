@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo-encabezado.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilos.css" />
+    <title>AICSOLUTIONS</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#" class="enlace"><img src="images/logo.svg" alt="" width="200" height="100px" class="logo" /></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="checkbtn">
+                <img src="images/list.svg" class="menu-icono" alt="menu" width="30" height="30px" />
+            </label>
+            <ul class="navbar-menu" id="Topnav">
+                <li><a href="#carrousel">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropbtn" href="#servicios" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Sobre Nosotros
+                    </a>
+                    <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#quienes-somos">
+                                ¿Quiénes somos?
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#vision-mision">
+                                Visión y Misión
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#clientes">
+                                Nuestros Clientes
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#servicios">
+                        Servicios
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#proyectos">
+                        Proyectos
+                    </a>
+                    
+                </li>
+                <li><a href="#contactenos">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="carrousel">
+        <div id="carouselExampleDark" class="carrousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/inicio-img1.jpg" class="d-block" alt="..." />
+                    <div class="carousel-titulo carousel-caption  d-md-block">
+                        <div class="contenido-principal">
+                            <h3 class="superior titulo">Mecatrónica Industrial</h3>
+                            <div class="intermedio-titulo">
+                                <h2 class="intermedio titulo">Mantenimiento </h2>
+                                <h2 class="intermedio-2 titulo">Eficiente</h2>
+                            </div>
+                            <h3 class="inferior">Eficiencia Garantizada</h3>
+                            <a href="#contactenos">
+                                <button>Contáctanos</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/inicio-img2.jpg" class="d-block" alt="..." />
+                    <div class="carousel-titulo carousel-caption d-none d-md-block">
+                        <!--<h5>Second slide label</h5>
+                        <p>
+                            Some representative placeholder content for the second slide.
+                        </p>-->
+                        <div class="contenido-principal">
+                            <h3 class="superior titulo">Mecatrónica Industrial</h3>
+                            <div class="intermedio-titulo">
+                                <h2 class="intermedio titulo">Mantenimiento</h2>
+                                <h2 class="intermedio-2 titulo">Confiable</h2>
+                            </div>
+                            <h3 class="inferior">Nosotros nos encargamos</h3>
+                            <a href="#contactenos">
+                                <button>Contáctanos</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/inicio-img3.jpg" class="d-block" alt="..." />
+                    <div class="carousel-titulo carousel-caption d-none d-md-block">
+                        <!--<h5>Third slide label</h5>
+                        <p>
+                            Some representative placeholder content for the third slide.
+                        </p>-->
+                        <div class="contenido-principal">
+                            <h3 class="superior titulo">Mecatrónica Industrial</h3>
+                            <div class="intermedio-titulo">
+                                <h2 class="intermedio titulo">Mantenimiento</h2>
+                                <h2 class="intermedio-2 titulo">a medida</h2>
+                            </div>
+                            <h3 class="inferior">Soluciones adaptadas a su necesidad</h3>
+                            <a href="#contactenos">
+                                <button>Contáctanos</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros">
+        <div class="about">
+            <div class="about-us-container" id="quienes-somos">
+                <div class="about-img" id="parallax-container">
+                    <img class="img" src="images/sobre-nosotros.jpg" id="parallax-img" />
+
+                </div>
+                <div class="about-content">
+                    <h1>¿Quiénes somos?</h1>
+                    <p>
+                        AIC Solutions SAC, líderes en mecatrónica industrial. Especializados
+                        en mantenimiento, rebobinado de motores, sistemas de refrigeración,
+                        electricidad y automatización PLC. Desde diseño hasta montaje,
+                        brindamos soluciones integrales con calidad garantizada. <br> Su socio
+                        confiable para la excelencia industrial.
+                    </p>
+                </div>
+            </div>
+            <div  id="vision-mision">
+                <div class="mision-vision-container">
+                    <div class="vision-container">
+                        <div class="title">
+                            <h3>Nuestra</h3>
+                            <h2>Visión</h2>
+                        </div>
+                        <hr style="color: black; background-color: black;" />
+                        <p>
+                            Brindamos fabricación de equipos industriales y didácticos,
+                            servicios en mantenimiento electromecánico y automatización
+                            industrial adaptables a las necesidades de nuestros clientes,
+                            contribuyendo a su desarrollo y crecimiento, mediante nuestro equipo
+                            de profesionales calificados.
+                        </p>
+                    </div>
+                    <div class="mision-container">
+                        <div class="title">
+                            <h3>Nuestra</h3>
+                            <h2>Misión</h2>
+                        </div>
+                        <hr />
+                        <p>
+                            Consolidarnos y liderar en la región sur del país en las áreas de
+                            automatización industrial y control electromecánico, generando
+                            relaciones duraderas con nuestros clientes, proveedores y nuestro
+                            personal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="client-container" id="clientes">
+                <div class="cliente-titulo">
+                    <div class="title">
+                        <h2>Nuestros</h2>
+                        <h1>Clientes</h1>
+                    </div>
+                    <hr />
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/1.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/2.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/3.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/4.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/5.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/6.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/7.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/8.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/9.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/10.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/11.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/12.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/13.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/14.jpg" class="w-100" />
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/15.jpg" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="servicios">
+        <div class="servicios">
+            <div class="servicios-titulo">
+                <div class="title">
+                    <h3>Nuestros</h3>
+                    <h2>Servicios</h2>
+                </div>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/MANTENIMIENTO_Y_REBOBINADO_logo.svg" />
+                    <p>MANTENIMIENTO Y REBOBINADO DE MOTORES Y GENERADORES</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/FABRICACION Y MANTENIMIENTO DE TRASFORMADORES.png" />
+                    <p>FABRICACION Y MANTENIMIENTO DE TRANSFORMADORES</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/SISTEMAS_DE_REFRIGERACIOiN_Y_AIRE_ACONDICIONADO_lo.svg" />
+                    <p>SISTEMAS DE REFRIGERACIÓN Y AIRE ACONDICIONADO</p>
+                </div>
+                
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/ELECTRICIDAD_Y_ELECTRONICA_INDUSTRIAL_logo.svg" />
+                    <p>ELECTRICIDAD Y ELECTRÓNICA INDUSTRIAL</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/FABRICACION Y MANTENIMIENTO DE TARJETAS ELECTRONICAS.png" />
+                    <p>FABRICACION Y MANTENIMIENTO DE TARJETAS ELECTRONICAS</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/INSTRUMENTACION_INDUSTRIAL_logo.svg" />
+                    <p>INSTRUMENTACION INDUSTRIAL</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/MANTENIMIENTO_DE_VARIADORES_DE_VELOCIDAD_logo.svg" />
+                    <p>MANTENIMIENTO DE VARIADORES DE VELOCIDAD</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/PUESTAS_A_TIERRA_Y_CERTIFICACION_logo.svg" />
+                    <p>PUESTAS A TIERRA Y CERTIFICACIÓN</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/HIDRAULICA_Y_NEUMETICA_INDUSTRIAL_logo.svg" />
+                    <p>HIDRAULICA Y NEUMÁTICA INDUSTRIAL</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/COMPRESORES DE AIRE Y BOMBAS HIDRAULICAS.png" />
+                    <p>COMPRESORES DE AIRE Y BOMBAS HIDRAULICAS</p>
+                </div>
+                <div class="servicio col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="images/PROGRAMACION DE PLC Y MICROCONTROLADORES PIC.png" />
+                    <p>PROGRAMACION DE PLC Y MICROCONTROLADORES PIC</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </section>
+    <section id="proyectos">
+        <div class="proyectos">
+            <div class="proyectos-titulo">
+                <div class="title">
+                    <h3>Nuestros</h3>
+                    <h2>Proyectos</h2>
+                </div>
+                <hr />
+            </div>
+            <!-- ACORDEON DE PROYECTOS -->
+            <div class="acordeon">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                MANTENIMIENTO EQUIPAMENTO/SISTEMA ELECTROMECANICO
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a>Inspeccionar el aislamiento térmico</a>
+                                    </li>
+                                    <li>
+                                        <a>Mantenimiento general del sistema eléctrico completo
+                                            del
+                                            equipo y mejora</a>
+                                    </li>
+                                    <li>
+                                        <a>Cambio y suministro de terminales de conexión</a>
+                                    </li>
+                                    <li>
+                                        <a>Mantenimiento preventivo de contactores</a>
+                                    </li>
+                                    <li>
+                                        <a>Revisión y prueba de la secuencia en controles en
+                                            general
+                                            (service testing)</a>
+                                    </li>
+                                    <li>
+                                        <a>Cambio de cableado de control en mal estado</a>
+                                    </li>
+                                    <li>
+                                        <a>Cambio de aceite de reductor</a>
+                                    </li>
+                                    <li>
+                                        <a>Cambio y suministro de reten</a>
+                                    </li>
+                                    <li>
+                                        <a>Fabricación y suministro de empaquetaduras anterior y
+                                            posterior reductor</a>
+                                    </li>
+                                    <li>
+                                        <a>Fabricación y suministro de empaquetaduras anterior y
+                                            posterior motor</a>
+                                    </li>
+                                    <li>
+                                        <a>Diagnóstico mecánico eléctrico de motor</a>
+                                    </li>
+                                    <li>
+                                        <a>Pruebas eléctricas del bobinado (Megado y
+                                            Resistencia)</a>
+                                    </li>
+                                    <li>
+                                        <a>Pulverizado de Estatores con solvente dieléctrico
+                                            S-25</a>
+                                    </li>
+                                    <li>
+                                        <a>Tratamiento térmico del bobinado de estatores</a>
+                                    </li>
+                                    <li>
+                                        <a>Re-barnizado del estator con Antiflash Rojo Clase
+                                            H</a>
+                                    </li>
+                                    <li>
+                                        <a>Cambio y suministro de rodamientos</a>
+                                    </li>
+                                    <li>
+                                        <a>Reparación y Mantenimiento de mando</a>
+                                    </li>
+                                    <li>
+                                        <a>Mantenimiento controlador de levas (final de
+                                            carrera)</a>
+                                    </li>
+                                    <li>
+                                        <a>Rotulado de sistema de fuerza y mando</a>
+                                    </li>
+                                    <li><a>Armado de motor</a></li>
+                                    <li>
+                                        <a>Protocolo de prueba</a>
+                                    </li>
+                                    <li><a>Pintado de motor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+
+
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+
+                                    FABRICACION DE SISTEMA PUESTA A TIERRA
+
+                                </button>
+
+                            </h2>
+                    </div>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a>Demolición de suelo de concreto (área del
+                                        pozo)</a>
+                                </li>
+                                <li>
+                                    <a>Excavación de 1m x 1m por 2.50m de profundidad</a>
+                                </li>
+                                <li>
+                                    <a>Tratamiento de la tierra para cada pozo a
+                                        tierra</a>
+                                </li>
+                                <li class="accordion-li">
+                                    <div class="accordion li" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingLi">
+                                                <button class="accordion-button li" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseLi" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseLi">
+                                                    <a style="color: black;">Preparación de material para el pozo</a>
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseLi" class="accordion-collapse collapse show"
+                                                aria-labelledby="panelsStayOpen-headingLi">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Varilla de cobre de ¾” de espesor</li>
+                                                        <li>Conectores de cobre de ¾”</li>
+                                                        <li>Tierra de chacra</li>
+                                                        <li>Bentonita</li>
+                                                        <li>Cemento conductivo</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a>Eliminación de tierra no deseada</a>
+                                </li>
+                                <li>
+                                    <a>Eliminación de escombro</a>
+                                </li>
+                                <li>
+                                    <a>Compactación y rellenado de tierra</a>
+                                </li>
+                                <li>
+                                    <a>Adoquinado de área escavada</a>
+                                </li>
+                                <li>
+                                    <a>Conexión de los pozos para poder llegar a la
+                                        medida
+                                        deseada</a>
+                                </li>
+                                <li>
+                                    <a>Medición y certificación de los pozos a tierra</a>
+                                </li>
+                                <li>
+                                    <a>Suministro de caja para puesta a tierra</a>
+                                </li>
+                                <li>
+                                    <a>Soldadura exotérmica</a>
+                                </li>
+                                <li><a>Pruebas finales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTree" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseTree">
+                            MANTENIMIENTO PREVENTIVO DE SISTEMA DE PUESTA A TIERRA
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTree" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingTree">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a>Medición inicial de pozo a tierra</a>
+                                </li>
+                                <li>
+                                    <a>Excavación de aprox. 1metro para cambio de tierra
+                                        muerta</a>
+                                </li>
+                                <li>
+                                    <a>Suministro de bentonita</a>
+                                </li>
+                                <li>
+                                    <a>Suministro de una dosis de THORGEL</a>
+                                </li>
+                                <li>
+                                    <a>Suministro de cemento conductivo</a>
+                                </li>
+                                <li>
+                                    <a>Compactación y rellenado de tierra</a>
+                                </li>
+                                <li>
+                                    <a>Suministro y cambio de caja de registro</a>
+                                </li>
+                                <li>
+                                    <a>Limpieza e inspección de barra de cobre</a>
+                                </li>
+                                <li>
+                                    <a>Cambio y suministro de terminales de cobre ¾</a>
+                                </li>
+                                <li><a>Pruebas finales</a></li>
+                                <li>
+                                    <a>Certificación de cada pozo a tierra</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            MANTENIMIENTO AIRE ACONDICIONADO
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a>Revisión de nivel de refrigerante.</a>
+                                </li>
+                                <li>
+                                    <a>Revisión y prueba de fugas de refrigerante</a>
+                                </li>
+                                <li>
+                                    <a>Revisión de la caída de presión de las piedras
+                                        deshidratadoras</a>
+                                </li>
+                                <li>
+                                    <a>Inspeccionar el aislamiento térmico</a>
+                                </li>
+                                <li>
+                                    <a>Mantenimiento general de ducteria completa del
+                                        equipo</a>
+                                </li>
+                                <li>
+                                    <a>Mantenimiento de chaquetas interiores</a>
+                                </li>
+                                <li>
+                                    <a>Mantenimientos de válvulas solenoide</a>
+                                </li>
+                                <li>
+                                    <a>Mantenimiento de intercambiador de calor</a>
+                                </li>
+                                <li>
+                                    <a>Puesta en marcha del equipo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <section id="contactenos">
+        <div class="contactenos">
+            <h1>Contactános</h1>
+            <div class="contactanos-container">
+                <img src="images/WhatsApp-Logo.wine.svg" />
+                <h2>¿Tienes alguna consulta?</h2>
+                <h3>Habla con nosotros</h3>
+                <a href="https://wa.link/s89w7g"><button class="boton">Contáctanos</button></a>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="image-footer">
+                <img class="img" src="images/logo.svg" />
+            </div>
+            <div class="footer-container">
+                <div class="navega apartado">
+                    <h3>Navega</h3>
+                    <ul>
+                        <li><a href="#"> Inicio</a></li>
+                        <li><a href="#sobre-nosotros"> Sobre Nosotros</a></li>
+                        <li><a href="#servicios"> Servicios</a></li>
+                        <li><a href="#proyectos"> Proyectos</a></li>
+                    </ul>
+                </div>
+                <div class="visitanos apartado">
+                    <h3>Visitanos</h3>
+                    <ul>
+                        <li>MZ.48 L.13 Pedro P. Díaz Cerro Colorado - Arequipa</li>
+                    </ul>
+                </div>
+                <div class="siguenos apartado">
+                    <h3>Siguenos</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/people/AC-Electromecanica/100076285904614/?mibextid=2JQ9oc"><img src="images/icono-facebook.svg"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactanos apartado">
+                    <div>
+                        <h3>Llámanos:</h3>
+                        <ul>
+                            <li>+51 958-095-808</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Correo:</h3>
+                        <ul>
+                            <li>acsolutionsindustrial@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</html>
